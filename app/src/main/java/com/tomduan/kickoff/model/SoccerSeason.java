@@ -5,6 +5,7 @@ package com.tomduan.kickoff.model;
  */
 public class SoccerSeason {
 
+    private Link _links;
     private int currentMatchday;
     private String league;
     private int id;
@@ -13,6 +14,7 @@ public class SoccerSeason {
     private int numberOfMatchdays;
     private int numberOfTeams;
     private int year;
+    private String caption;
 
     public int getCurrentMatchday() {
         return currentMatchday;
@@ -44,5 +46,13 @@ public class SoccerSeason {
 
     public int getYear() {
         return year;
+    }
+
+    public String getCaption() {
+        return caption;
+    }
+
+    public Link get_links() {
+        return _links;
     }
 }
